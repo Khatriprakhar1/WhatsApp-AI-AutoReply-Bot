@@ -1,45 +1,24 @@
 WhatsApp AI AutoReply Bot
+⚙️ Installation
+1. Clone the repository
+git clone https://github.com/Khatriprakhar1/WhatsApp-AI-AutoReply-Bot.git
+cd WhatsApp-AI-AutoReply-Bot
+2. Install dependencies
+pip install pyautogui
+pip install pyperclip
+pip install openai
 
-A simple Python bot that reads messages from WhatsApp Web and automatically generates replies using the OpenAI API.
+Or install all together:
 
-Features
+pip install -r requirements.txt
+🔑 Setup OpenAI API Key
 
-Reads chat messages automatically
+Open the Python file and add your API key:
 
-Detects the latest message in the chat
+client = OpenAI(
+  api_key="YOUR_API_KEY"
+)
 
-Generates AI responses
+You can get your API key from:
 
-Sends replies automatically
-
-Supports Hindi + English style responses
-
-Requirements
-
-Python 3.x
-
-WhatsApp Web opened in browser
-
-Install dependencies:
-
-pip install pyautogui pyperclip openai
-Setup
-
-Add your OpenAI API key in the script:
-
-client = OpenAI(api_key="YOUR_API_KEY")
-Run
-
-Open WhatsApp Web
-
-Open the chat you want the bot to reply in
-
-Run:
-
-python bot.py
-
-The bot will read the chat, generate a response, and send it automatically.
-
-Note
-
-Mouse coordinates used in pyautogui may need adjustment depending on your screen resolution.
+https://platform.openai.com/api-keys
